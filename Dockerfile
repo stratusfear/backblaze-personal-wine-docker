@@ -17,5 +17,5 @@ RUN echo " \
     openbox & \
     x11vnc -nopw -q -forever -loop & \
     wine "$WINEPREFIX"/drive_c/Program\ Files/Backblaze/bzbui.exe -noqiet \
-		"> /start.sh
+		"> /start.sh && chmod 755 /start.sh
 CMD /start.sh
